@@ -7,7 +7,6 @@
     <div class="card shadow-lg p-4">
         <h2 class="text-center mb-4">Payment</h2>
         <hr />
-        <form method="post" action="/Home/SubmitForm">
             <div class="row">
 
                 <!-- Left Side -->
@@ -77,9 +76,21 @@
             </div>
 
             <div class="contact-submit-btn text-center">
-                <button type="submit" class="btn btn-outline-info">Proceed To Pay</button>
+            <button type="submit" class="btn btn-outline-info" onclick="showSuccessAlert()">Proceed To Pay</button>
                 <p class="form-messege"></p>
             </div>
-        </form>
     </div>
 </div>
+
+@section script{
+    <script>
+        function showSuccessAlert() {
+            Swal.fire({
+                title: "Payment Successful!",
+                text: "Your payment has been processed successfully.",
+                icon: "success",
+                confirmButtonText: "OK"
+            });
+        }
+    </script>
+}

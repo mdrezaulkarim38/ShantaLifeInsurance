@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="~/assets/css/custom.css">
     <link rel="stylesheet" href="~/css/site.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Google Tag Manager -->
     <script>
         (function (w, d, s, l, i) {
@@ -350,11 +351,31 @@
                 <!-- Modal Footer -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Calculate</button>
+                    <button type="button" class="btn btn-primary" onclick="showSuccessAlert()">Calculate</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        function showSuccessAlert() {
+            Swal.fire({
+                title: "Calculation Successful!",
+                text: "Your Calculation has been successfully submitted.",
+                icon: "success",
+                confirmButtonText: "OK"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Find the modal and simulate the close button click to dismiss the modal
+                    var modal = document.getElementById('calculationModal');
+                    var closeButton = modal.querySelector('[data-bs-dismiss="modal"]');
+                    if (closeButton) {
+                        closeButton.click();
+                    }
+                }
+            });
+        }
+    </script>
 
     <script src="~/assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="~/assets/js/vendor/jquery-3.3.1.min.js"></script>
@@ -364,7 +385,7 @@
     <script src="~/assets/js/main.js"></script>
 
     <script>
-                window.addEventListener("scroll", function () {
+         window.addEventListener("scroll", function () {
             var header = document.querySelector(".header-bottomarea");
             if (window.scrollY > 50) {
                 header.classList.add("fixed-nav");
@@ -373,6 +394,7 @@
             }
         });
     </script>
-    @await RenderSectionAsync("Scripts", required: false)
+
+    @RenderSection("script", required: false)
 </body>
 </html>

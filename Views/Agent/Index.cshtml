@@ -73,7 +73,7 @@
             </div>
 
             <div class="contact-submit-btn text-center">
-                <button type="submit" class="btn btn-outline-info">SUBMIT NOW</button>
+                <button type="submit" class="btn btn-outline-info" onclick="showSuccessAlert()">SUBMIT NOW</button>
                 <p class="form-messege"></p>
             </div>
         </form>
@@ -81,4 +81,15 @@
 </div>
 
 
-
+@section script {
+    <script>
+        function showSuccessAlert() {
+            Swal.fire({
+                title: "Submit Successful!",
+                text: "Your Application has been successfully Submited.",
+                icon: "success",
+                confirmButtonText: "OK"
+            });
+        }
+    </script>
+}
