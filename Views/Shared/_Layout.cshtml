@@ -74,7 +74,13 @@
                                     <a asp-controller="Home" asp-action="Index">HOME</a>
                                 </li>
                                 <li><a asp-controller="Home" asp-action="About">ABOUT</a></li>
-                                <li><a asp-controller="CustomerProfile" asp-action="Index">Login</a></li>
+                                <li class="in-dropdown">
+                                    <a asp-controller="CustomerProfile" asp-action="Index">Login</a>
+                                    <ul>
+                                        <li><a asp-controller="CustomerProfile" asp-action="Index">Customer</a></li>
+                                        <li><a asp-controller="CustomerProfile" asp-action="Index">Employee</a></li>
+                                    </ul>
+                                    </li>
                                 <li class="in-dropdown">
                                     <a href="#">SERVICE</a>
                                     <ul>
