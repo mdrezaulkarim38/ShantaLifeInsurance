@@ -1,0 +1,101 @@
+﻿@{
+    ViewData["Title"] = "Contact Page";
+}
+
+<!-- Breadcrumb -->
+<div class="breadcrumb-area bg-image-2" data-black-overlay="4">
+    <div class="container">
+        <div class="in-breadcrumb">
+            <div class="row align-items-center">
+                <div class="col">
+                    <ul>
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h6>Contact Us</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--// Breadcrumb -->
+<!-- Contact Cards -->
+<div class="container mt-5 mb-3">
+    <div class="row">
+        <!-- Single Service -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="in-service mt-30" style="min-height: 177px;">
+                <h5><a href="services-details.html">Visit</a></h5>
+                <p>Address: Shanta Western Tower, Level 10, 186 Bir Uttam Mir Shawkat Sarak, Dhaka 1208</p>
+                <span class="in-service-transparenticon">
+                    <i class="flaticon-car-1"></i>
+                </span>
+            </div>
+        </div>
+        <!--// Single Service -->
+        <!-- Single Service -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="in-service mt-30" style="min-height: 177px;">
+                <h5><a href="services-details.html">Phone</a></h5>
+                <p class="card-text">+88 09610889900</p>
+                <p class="card-text">(10 am-6 pm, Sunday-Thursday)</p>
+                <span class="in-service-transparenticon">
+                    <i class="flaticon-car-1"></i>
+                </span>
+            </div>
+        </div>
+        <!--// Single Service -->
+        <!-- Single Service -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="in-service mt-30" style="min-height: 177px;">
+                <h5><a href="services-details.html">Email</a></h5>
+                <p class="card-text">info@shantalife.com</p>
+                <span class="in-service-transparenticon">
+                    <i class="flaticon-car-1"></i>
+                </span>
+            </div>
+        </div>
+        <!--// Single Service -->
+        <!-- Single Service -->
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="in-service mt-30" style="min-height: 177px;">
+                <h5><a href="services-details.html">Follow Us</a></h5>
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/people/Shanta-Life-Insurance/61566152682701/?_rdr"><i class="zmdi zmdi-facebook"></i></a></li>
+                    <li><a href="@Html.Raw("https://youtube.com/@shantalifeinsurance?si=FZ7je5u8sVL8n86K")"><i class="zmdi zmdi-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/shanta-life-insurance/"><i class="zmdi zmdi-linkedin"></i></a></li>
+                </ul>
+                <span class="in-service-transparenticon">
+                    <i class="flaticon-car-1"></i>
+                </span>
+            </div>
+        </div>
+        <!--// Single Service -->
+    </div>
+</div>
+<!--// Contact Cards -->
+<style>
+    .social-icons {
+        display: flex;
+        justify-content: space-around; /* Space out the icons */
+        align-items: center; /* Align items vertically */
+        padding: 0;
+        list-style: none;
+    }
+
+        .social-icons li {
+            margin: 0 10px; /* Add some spacing between the icons */
+        }
+
+        .social-icons a i {
+            font-size: 30px; /* Increase the icon size */
+            color: #000; /* Change the icon color if needed */
+            transition: all 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .social-icons a:hover i {
+            color: #007bff; /* Change the color when hovered */
+        }
+</style>

@@ -75,10 +75,10 @@
                                 </li>
                                 <li><a asp-controller="Home" asp-action="About">ABOUT</a></li>
                                 <li class="in-dropdown">
-                                    <a asp-controller="CustomerProfile" asp-action="Index">Login</a>
+                                    <a href="#">Login</a>
                                     <ul>
-                                        <li><a asp-controller="CustomerProfile" asp-action="Index">Customer</a></li>
-                                        <li><a asp-controller="CustomerProfile" asp-action="Index">Employee</a></li>
+                                        <li><a href="#">Customer Login</a></li>
+                                        <li><a href="#">Employee Login</a></li>
                                     </ul>
                                     </li>
                                 <li class="in-dropdown">
@@ -258,11 +258,9 @@
                             </div>
                             <div class="col-lg-6 col-12">
                                 <ul class="copyright-links">
-                                    <li><a href="#">Help</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Privacy</a></li>
-                                    <li><a href="#">Support </a></li>
+                                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                    <li><a asp-controller="Home" asp-action="About">About</a></li>
+                                    <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -356,8 +354,8 @@
 
                 <!-- Modal Footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary" onclick="showSuccessAlert()">Calculate</button>
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="in-button in-button-xs" onclick="showSuccessAlert()">Calculate</button>
                 </div>
             </div>
         </div>

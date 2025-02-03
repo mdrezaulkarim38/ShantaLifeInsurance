@@ -2500,7 +2500,7 @@ select {
   transition: all 0.4s ease-in-out 0s;
 }
 .in-service:hover {
-  background: #3489ca;
+    background: #9c843c;
 }
 .in-service:hover .in-service-icon, .in-service:hover h5, .in-service:hover h5 a, .in-service:hover p {
   color: #ffffff;
