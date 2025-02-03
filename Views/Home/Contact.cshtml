@@ -27,7 +27,7 @@
         <!-- Single Service -->
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div class="in-service mt-30" style="min-height: 177px;">
-                <h5><a href="services-details.html">Visit</a></h5>
+                <h5><a href="#">Visit</a></h5>
                 <p>Address: Shanta Western Tower, Level 10, 186 Bir Uttam Mir Shawkat Sarak, Dhaka 1208</p>
                 <span class="in-service-transparenticon">
                     <i class="flaticon-car-1"></i>
@@ -39,8 +39,7 @@
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div class="in-service mt-30" style="min-height: 177px;">
                 <h5><a href="services-details.html">Phone</a></h5>
-                <p class="card-text">+88 09610889900</p>
-                <p class="card-text">(10 am-6 pm, Sunday-Thursday)</p>
+                <p><a href="tel:09610889900" id="contact-mailTocolor"><span> +88 09610889900 <br>(10 am-6 pm, Sunday-Thursday) </span></a></p>
                 <span class="in-service-transparenticon">
                     <i class="flaticon-car-1"></i>
                 </span>
@@ -51,7 +50,7 @@
         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
             <div class="in-service mt-30" style="min-height: 177px;">
                 <h5><a href="services-details.html">Email</a></h5>
-                <a class="card-text" href="mailto:info@shantalife.com">info@shantalife.com</a>
+                <p><a href="mailto:info@shantalife.com" id="contact-mailTocolor">info@shantalife.com</a></p>
                 <span class="in-service-transparenticon">
                     <i class="flaticon-car-1"></i>
                 </span>
@@ -77,6 +76,14 @@
 </div>
 <!--// Contact Cards -->
 <style>
+    #contact-mailTocolor {
+        color: #000000 !important;
+    }
+
+    .in-service:hover #contact-mailTocolor {
+        color: #ffffff !important;
+    }
+
     .social-icons {
         display: flex;
         justify-content: space-around; /* Space out the icons */
