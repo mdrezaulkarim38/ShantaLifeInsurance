@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Payment Method";
+}
+
+
+<div class="container mt-2 mb-5">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center mb-4">Payment</h2>
+        <hr />
+        <form method="post" action="/Home/SubmitForm">
+            <div class="row">
+
+                <!-- Left Side -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="premium" class="form-label">Premium</label>
+                        <input type="number" id="premium" name="Premium" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="loan" class="form-label">Automation Premium Loan</label>
+                        <input type="number" id="loan" name="AutomationPremiumLoan" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="suspenseAmount" class="form-label">Suspense Amount:</label>
+                        <input type="number" id="suspenseAmount" name="SuspenseAmount" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="makePaymentFor" class="form-label">Make Payment For:</label>
+                        <select id="makePaymentFor" name="MakePaymentFor" class="form-select" required>
+                            <option value="">-- Select --</option>
+                            <option value="Premium">Premium</option>
+                            <option value="APL">APL</option>
+                            <option value="Loan">Loan</option>
+                            <option value="Reinstatement">Reinstatement</option>
+                            <option value="Balance">Balance</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="nextDueDate" class="form-label">Next Due Date:</label>
+                        <input type="date" id="nextDueDate" name="NextDueDate" class="form-control" required />
+                    </div>
+                </div>
+
+                <!-- Right Side -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="outStandingLoan" class="form-label">Outstanding Loan:</label>
+                        <input type="text" id="outStandingLoan" name="OutstandingLoan" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="reinstatement" class="form-label">Reinstatement:</label>
+                        <input type="text" id="reinstatement" name="Reinstatement" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="amountToPay" class="form-label">Amount to Pay:</label>
+                        <input type="number" id="amountToPay" name="AmountToPay" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="selectPaymentMethod" class="form-label">Select Payment Method:</label>
+                        <select id="selectPaymentMethod" name="SelectPaymentMethod" class="form-select" required>
+                            <option value="">-- Select --</option>
+                            <option value="Visa">Visa</option>
+                            <option value="MasterCard">MasterCard</option>
+                            <option value="American Express">American Express</option>
+                            <option value="Bkash">Bkash</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-submit-btn text-center">
+                <button type="submit" class="btn btn-outline-info">Proceed To Pay</button>
+                <p class="form-messege"></p>
+            </div>
+        </form>
+    </div>
+</div>

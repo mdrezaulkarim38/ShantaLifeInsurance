@@ -1,0 +1,84 @@
+﻿@{
+    ViewBag.Title = "Application Form";
+}
+
+
+<div class="container mt-2 mb-5">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center mb-4">Application Form</h2>
+        <hr />
+        <form method="post" action="/Home/SubmitForm">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Enter Name:</label>
+                        <input type="text" id="name" name="Name" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="national" class="form-label">Enter National ID:</label>
+                        <input type="number" id="national" name="NationalID" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="lastDegree" class="form-label">Last Degree:</label>
+                        <select id="lastDegree" name="LastDegree" class="form-select" required>
+                            <option value="">-- Select Last Degree --</option>
+                            <option value="SSC">SSC</option>
+                            <option value="HSC">HSC</option>
+                            <option value="BSc">BSc</option>
+                            <option value="MSc">MSc</option>
+                            <option value="PhD">PhD</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="dateOfBirth" class="form-label">Enter Date of Birth:</label>
+                        <input type="date" id="dateOfBirth" name="DateOfBirth" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="location" class="form-label">Enter Location:</label>
+                        <input type="text" id="location" name="Location" class="form-control" required />
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="contact" class="form-label">Enter Contact Number:</label>
+                        <input type="number" id="contact" name="Contact" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Enter Company:</label>
+                        <input type="text" id="company" name="Company" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="designation" class="form-label">Enter Designation:</label>
+                        <input type="text" id="designation" name="Designation" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Enter Email Address:</label>
+                        <input type="email" id="email" name="Email" class="form-control" required />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cv" class="form-label">Upload CV (PDF only):</label>
+                        <input type="file" id="cv" name="CVFile" class="form-control" accept=".pdf" required />
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-submit-btn text-center">
+                <button type="submit" class="btn btn-outline-info">SUBMIT NOW</button>
+                <p class="form-messege"></p>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="~/favicon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="~/assets/images/icon.png">
+    <title>@ViewData["Title"] - ShantaLifeInsurance</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
+    <!-- Google font (font-family: 'Open Sans', sans-serif;) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,400i,600,700" rel="stylesheet">
+    <!-- Plugins -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/plugins.css">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="~/assets/css/style.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="~/assets/css/custom.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                }); var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                        '../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5JCTSSF');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <header class="header">
+            <div class="header-toparea">
+                <div class="container">
+                    <div class="row justify-content-betwween">
+                        <div class="col-lg-6">
+                            <ul class="header-topcontact">
+                                <li><i class="zmdi zmdi-phone"></i> PHONE : <a href="tel:123412341">123412341</a></li>
+                                <li><i class="zmdi zmdi-email"></i> E-MAIL : <a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="header-toplinks">
+                                <li><a href="#">GET A QUOTE</a></li>
+                                <li><a href="#">NEED AN AGENT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Bottom Area -->
+            <div class="header-bottomarea">
+                <div class="container">
+                    <div class="header-bottom">
+
+                        <!-- Header Logo -->
+                        <a asp-controller="Home" asp-action="Index" class="header-logo">
+                            <img src="~/assets/images/logo/logo-SLI.png" alt="header image" style="height: 55px;max-height:60px; max-width: 200px">
+                        </a>
+                        <!--// Header Logo -->
+                        <!-- Main Navigation -->
+                        <nav class="in-navigation">
+                            <ul>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Index">HOME</a>
+                                </li>
+                                <li><a asp-controller="Home" asp-action="About">ABOUT</a></li>
+                                <li><a asp-controller="CustomerProfile" asp-action="Index">Login</a></li>
+                                <li class="in-dropdown">
+                                    <a href="#">SERVICE</a>
+                                    <ul>
+                                        <li><a asp-controller="Agent" asp-action="Index">Agent Onboarding</a></li>
+                                        <li><a asp-controller="Payment" asp-action="Index">Make Payment</a></li>
+                                        <li><a href="#">Service Details</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a asp-controller="Home" asp-action="BranchLocator">Branch Locator</a></li>
+                            </ul>
+                        </nav>
+                        <!--// Main Navigation -->
+
+                        <div class="header-right-wrap">
+                            <!-- Buy Now -->
+                            <div class="buy-now">
+                                <a href="#" class="buy-now-button" data-bs-toggle="modal" data-bs-target="#premiumCalculatorModal">Premium Calculator</a>
+                            </div>
+                            <!--// Buy Now -->
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--// Header Bottom Area -->
+            <!-- Mobile Menu -->
+            <div class="mobile-menu-wrapper clearfix">
+                <div class="container">
+                    <div class="mobile-menu"></div>
+                </div>
+            </div>
+            <!--// Mobile Menu -->
+        </header>
+
+        <main class="page-content">
+            @RenderBody()
+        </main>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <!-- Footer Contact Area -->
+            <div class="footer-contact-area">
+                <div class="container">
+                    <div class="footer-contact">
+                        <div class="row">
+                            <div class="col">
+                                <div class="footer-contact-block">
+                                    <span class="footer-contact-icon">
+                                        <i class="zmdi zmdi-phone"></i>
+                                    </span>
+                                    <p><a href="#">+0884567863</a><br><a href="#">+0884567863</a></p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="footer-contact-block">
+                                    <span class="footer-contact-icon">
+                                        <i class="zmdi zmdi-home"></i>
+                                    </span>
+                                    <p>958 Lilyan Junction, Mitchellmouth, Rwanda</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="footer-contact-block">
+                                    <span class="footer-contact-icon">
+                                        <i class="zmdi zmdi-email"></i>
+                                    </span>
+                                    <p><a href="#">info@example.com</a><br><a href="#">info2@example.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--// Footer Contact Area -->
+            <!-- Footer Inner -->
+            <div class="footer-inner">
+
+                <!-- Footer Widgets Area -->
+                <div class="footer-widgets-area section-padding-lg">
+                    <div class="container">
+                        <div class="row widgets footer-widgets">
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-widget widget-info">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="~/assets/images/logo/logo-2.png" alt="footer logo">
+                                        </a>
+                                    </div>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                        incisequi nesciunt. Neque
+                                        porro quisquam.
+                                    </p>
+                                    <ul class="footer-socialicons">
+                                        <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-google-plus"></i></a></li>
+                                        <li><a href="#"><i class="zmdi zmdi-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-6">
+                                <div class="single-widget widget-links">
+                                    <h4 class="widget-title">
+                                        <span>Policy</span>
+                                    </h4>
+                                    <ul>
+                                        <li><a href="#">Term</a></li>
+                                        <li><a href="#">Licenses</a></li>
+                                        <li><a href="#">Fund</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Security</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6">
+                                <div class="single-widget widget-latestblog">
+                                    <h4 class="widget-title">
+                                        <span>Latest Blog</span>
+                                    </h4>
+                                    <ul>
+                                        <li>
+                                            <div class="widget-latestblog-image">
+                                                <a href="blog-details.html">
+                                                    <img src="~/assets/images/blog/thumbnails/blog-thumbnail-1.png" alt="blog thumbnail">
+                                                </a>
+                                            </div>
+                                            <span>1st Janu, 2018</span>
+                                            <h5><a href="blog-details.html">Ipsam rerum nisi beatae et</a></h5>
+                                        </li>
+                                        <li>
+                                            <div class="widget-latestblog-image">
+                                                <a href="blog-details.html">
+                                                    <img src="~/assets/images/blog/thumbnails/blog-thumbnail-2.png" alt="blog thumbnail">
+                                                </a>
+                                            </div>
+                                            <span>1st Janu, 2018</span>
+                                            <h5><a href="blog-details.html">Ipsam rerum nisi beatae et</a></h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6">
+                                <div class="single-widget widget-newsletter">
+                                    <h4 class="widget-title">
+                                        <span>Newsletter</span>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, coadipisicint, sed do eiusmod tempor incididunt</p>
+                                    <form action="#" class="widget-newsletter-form">
+                                        <input type="text" placeholder="Your email...">
+                                        <button type="submit"><img src="~/assets/images/icons/paper-plane-white.png" alt="send"></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--// Footer Widgets Area -->
+                <!-- Footer Copyright Area -->
+                <div class="footer-copyright-area">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-12">
+                                <p class="copyright-text">
+                                    Copyright 2018 &copy; <a href="#">Gregory</a>, All Right
+                                    Reserved
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <ul class="copyright-links">
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Services</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Support </a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--// Footer Copyright Area -->
+
+            </div>
+            <!--// Footer Inner -->
+
+        </footer>
+        <!--// Footer -->
+    </div>
+
+    <!-- Premium Calculator Modal -->
+    <div class="modal fade" id="premiumCalculatorModal" tabindex="-1" aria-labelledby="premiumCalculatorLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="premiumCalculatorLabel">Calculate Your Premium</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <!-- Left Column -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="policyType" class="form-label">Select User Plan</label>
+                                    <select class="form-select" id="policyType">
+                                        <option value="">Select Type</option>
+                                        <option value="life">Shanta DPS (with profit) Plan</option>
+                                        <option value="health">Shanta Endowment (With Profit) Plan</option>
+                                        <option value="auto">Shanta Child Education Security Plan</option>
+                                        <option value="auto">Shanta Three Payment Single Premium (With Profit) Plan</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="age" class="form-label mt-3">Age</label>
+                                    <input type="number" class="form-control" id="age">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="policyTerm" class="form-label">Select Term</label>
+                                    <select class="form-select" id="policyTerm">
+                                        <option value="">Select Term</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="paymentFrequency" class="form-label mt-3">Pay Mode</label>
+                                    <select class="form-select" id="paymentFrequency">
+                                        <option value="">Select</option>
+                                        <option value="monthly">Monthly</option>
+                                        <option value="quarterly">Quarterly</option>
+                                        <option value="half-yearly">Half Yearly</option>
+                                        <option value="yearly">Yearly</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Right Column -->
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="DOB" class="form-label">DOB</label>
+                                    <input type="date" class="form-control" id="DOB">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="sumAssuredAmount" class="form-label">Sum Assured Amount</label>
+                                    <input type="number" class="form-control" id="sumAssuredAmount">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="premium" class="form-label">Premium</label>
+                                    <input type="text" class="form-control" id="premium">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="basicAmount" class="form-label">Basic Premium</label>
+                                    <input type="number" class="form-control" id="basicAmount">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Calculate</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="~/assets/js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="~/assets/js/popper.min.js"></script>
+    <script src="~/assets/js/bootstrap.min.js"></script>
+    <script src="~/assets/js/plugins.js"></script>
+    <script src="~/assets/js/main.js"></script>
+
+    <script>
+                window.addEventListener("scroll", function () {
+            var header = document.querySelector(".header-bottomarea");
+            if (window.scrollY > 50) {
+                header.classList.add("fixed-nav");
+            } else {
+                header.classList.remove("fixed-nav");
+            }
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,30 @@
+.header {
+    
+}
+
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff; /* Adjust as needed */
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.modal-title {
+    color: #a79832; /* Gold color for the title */
+    font-weight: bold;
+}
+
+.modal-body label {
+    color: black; /* Black color for form labels */
+    font-weight: 500;
+}
+
+.modal-content {
+    border-radius: 10px; /* Optional: smooth rounded corners */
+}
+
